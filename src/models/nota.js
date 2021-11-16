@@ -15,21 +15,21 @@ class Nota {
     }
 
     mediaCA() {
-        const CA = Math.max(
+        const media = Math.max(
             0.4 * this.a1 + 0.6 * this.a2, 
             0.4 * this.a1 + 0.6 * this.a3, 
             0.4 * this.a3 + 0.6 * this.a2
         )
 
-        if (CA >= 9 ){
+        if (media >= 9 ){
             return "SS";
-        } else if (CA < 9 && CA >= 7){
+        } else if (media < 9 && media >= 7){
             return "MS";
-        } else if (CA >= 5 && CA < 7){
+        } else if (media >= 5 && media < 7){
             return "MM";
-        } else if (CA < 5 && CA >= 3){
+        } else if (media < 5 && media >= 3){
             return "MI";
-        } else if (CA < 3 && CA >= 1){
+        } else if (media < 3 && media >= 1){
             return "II"
         } else {
             return "SR"
