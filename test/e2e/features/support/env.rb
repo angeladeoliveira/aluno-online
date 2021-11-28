@@ -14,6 +14,6 @@ end
 
 Capybara.configure do |config|
     config.default_driver = :chrome_headless
-    config.app_host = 'http://aluno-online:3000'
+    config.app_host = 'http://localhost:3000'
     config.save_path = 'reports/screenshots'
 end
